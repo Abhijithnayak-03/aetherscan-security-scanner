@@ -1,0 +1,34 @@
+{
+  "scanner": {
+    "name": "Lightweight Web Vulnerability Scanner",
+    "version": "1.0",
+    "user_agent": "LightweightWebVulnScanner/1.0 (authorized-security-lab)"
+  },
+  "target": "http://localhost:3000/",
+  "scan": {
+    "pages_crawled": 1,
+    "urls_discovered": 1,
+    "max_pages": 50,
+    "delay_seconds": 0.25,
+    "timeout_seconds": 8.0,
+    "safe_mode": true
+  },
+  "summary": {
+    "total_findings": 0,
+    "severity_counts": {
+      "High": 0,
+      "Medium": 0,
+      "Low": 0,
+      "Info": 0
+    },
+    "owasp_categories": []
+  },
+  "findings": [],
+  "errors": [
+    "http://localhost:3000/: ConnectionError: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: / (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=3000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+    "http://localhost:3000/.git/HEAD: ConnectionError: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /.git/HEAD (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=3000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+    "http://localhost:3000/.env: ConnectionError: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /.env (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=3000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+    "http://localhost:3000/phpinfo.php: ConnectionError: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /phpinfo.php (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=3000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))",
+    "http://localhost:3000/server-status: ConnectionError: HTTPConnectionPool(host='localhost', port=3000): Max retries exceeded with url: /server-status (Caused by NewConnectionError(\"HTTPConnection(host='localhost', port=3000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it\"))"
+  ]
+}
